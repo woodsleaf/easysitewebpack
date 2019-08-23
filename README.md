@@ -1,2 +1,2 @@
-#Easy site on webpack
+# Easy site on webpack
 `npm install`
