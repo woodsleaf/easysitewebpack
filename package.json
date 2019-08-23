@@ -1,0 +1,48 @@
+{
+  "name": "easysitewebpack",
+  "version": "1.0.0",
+  "description": "easy site on webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear": "del-cli dist",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
+    "build-and-beautify": "del-cli dist && webpack --mode production && html dist/*.html --indent-size 2",
+    "beautify": "html dist/*.html --indent-size 2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woodsleaf/easysitewebpack.git"
+  },
+  "author": "woodsleaf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woodsleaf/easysitewebpack/issues"
+  },
+  "homepage": "https://github.com/woodsleaf/easysitewebpack#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "del-cli": "^2.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-cli": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "raw-loader": "^3.1.0",
+    "sass-loader": "^7.3.1",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
+}
